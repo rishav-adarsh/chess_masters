@@ -22,6 +22,7 @@ export default class Referee {
   isEnPassantMove(px, py, x, y, type, team, boardState) {
     const pawnDirection = team === 1 ? 1 : -1;
     // console.log("entered enpass function")
+    // console.log("entered enpass function")
 
     if (type === "pawn") {
       if (((x - px === -1  ||  x - px === 1)) && y - py === pawnDirection) {
